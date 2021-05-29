@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65BCBF"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#65BCBF"
+        android:elevation="1dp"
+        android:theme="@style/ToolbarTheme">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/balanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_family"
+            android:text="BALANCE"
+            android:textAlignment="center"
+            android:textColor="#80FFFFFF" />
+
+        <TextView
+            android:id="@+id/balanceNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_family"
+            android:text="$0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textFontWeight="700"
+            android:textSize="17pt" />
+
+        <Button
+            android:id="@+id/addNote"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_rekaman_home_button"
+            android:stateListAnimator="@null"
+            android:text="Tambah"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="8dp">
+
+        <ListView
+            android:id="@+id/lvNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#65BCBF"
+            android:dividerHeight="8dp" />
+    </LinearLayout>
+</LinearLayout>

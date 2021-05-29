@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Catet.in</string>
+    <string-array name="kategori">
+        <item>Makan di luar</item>
+        <item>Kebutuhan Umum</item>
+        <item>Gaji</item>
+        <item>Pajak</item>
+        <item>Cicilan Rumah</item>
+        <item>Cicilan Kendaraan</item>
+        <item>SPP Anak</item>
+        <item>Tabungan</item>
+        <item>Pendapatan Saham</item>
+        <item>Pendapatan Reksadana</item>
+    </string-array>
+</resources>
